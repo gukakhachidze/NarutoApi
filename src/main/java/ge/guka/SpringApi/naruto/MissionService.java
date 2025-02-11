@@ -40,7 +40,55 @@ public class MissionService {
         listOfMissions.add(killOrochimaru);
     }
 
-    List<Mission> getMissions(){
+    public List<Mission> getMissions(){
         return listOfMissions;
     }
+
+    public Mission getMissionById(int id){
+        for (Mission mission : listOfMissions){
+            if (mission.getId() == id){
+                return mission;
+            }
+        }
+        return null;
+    }
+
+    public Mission addMission(Mission mission){
+        if (mission == null || mission.getName() == null){
+            return null;
+        }
+
+        listOfMissions.add(mission);
+        return mission;
+    }
+
+    public Mission updateMission(Mission requestMission){
+        if (requestMission == null || requestMission.getName() == null){
+            return null;
+        }
+
+        Mission missionToUpdate = getMissionById(requestMission.getId());
+        missionToUpdate.setName(requestMission.getName());
+        missionToUpdate.setRank(requestMission.getRank());
+        missionToUpdate.setDone(requestMission.getDone());
+        missionToUpdate.setAssignedNinjas(requestMission.getAssignedNinjas());
+        return missionToUpdate;
+    }
+
+    public boolean removeMission(int id){
+        if (id < 0){
+            return false;
+        }
+
+        Mission missionToDelete = getMissionById(id);
+        if (missionToDelete == null){
+            return false;
+        }
+
+        listOfMissions.remove(missionToDelete);
+        return true;
+    }
+
+
+
 }
