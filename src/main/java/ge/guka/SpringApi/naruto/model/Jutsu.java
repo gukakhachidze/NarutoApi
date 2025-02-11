@@ -1,4 +1,4 @@
-package ge.guka.springbootdemo.naruto.model;
+package ge.guka.SpringApi.naruto.model;
 
 public class Jutsu {
 

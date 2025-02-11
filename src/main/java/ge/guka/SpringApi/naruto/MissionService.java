@@ -1,9 +1,9 @@
-package ge.guka.springbootdemo.naruto;
+package ge.guka.SpringApi.naruto;
 
-import ge.guka.springbootdemo.naruto.model.Chakra;
-import ge.guka.springbootdemo.naruto.model.Character;
-import ge.guka.springbootdemo.naruto.model.Jutsu;
-import ge.guka.springbootdemo.naruto.model.Mission;
+import ge.guka.SpringApi.naruto.model.Chakra;
+import ge.guka.SpringApi.naruto.model.Character;
+import ge.guka.SpringApi.naruto.model.Jutsu;
+import ge.guka.SpringApi.naruto.model.Mission;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +19,7 @@ public class MissionService {
         Jutsu rasengan = new Jutsu("Rasengan", "Ninjutsu", 50, "A");
         Jutsu shadowClone = new Jutsu("Shadow Clone", "Ninjutsu", 30, "B");
         Character naruto = new Character(
+                1,
                 "Naruto",
                 "Hidden Leaf",
                 15,

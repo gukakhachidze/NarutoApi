@@ -1,13 +1,13 @@
-package ge.guka.springbootdemo;
+package ge.guka.SpringApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootdemoApplication {
+public class SpringBootApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootdemoApplication.class, args);
+        SpringApplication.run(SpringBootApp.class, args);
     }
 
 }

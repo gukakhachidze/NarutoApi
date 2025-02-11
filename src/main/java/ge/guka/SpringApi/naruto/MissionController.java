@@ -1,6 +1,6 @@
-package ge.guka.springbootdemo.naruto;
+package ge.guka.SpringApi.naruto;
 
-import ge.guka.springbootdemo.naruto.model.Mission;
+import ge.guka.SpringApi.naruto.model.Mission;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

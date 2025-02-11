@@ -1,10 +1,11 @@
-package ge.guka.springbootdemo.naruto.model;
+package ge.guka.SpringApi.naruto.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Character {
 
+    private int id;
     private String name;
     private String village;
     private int age;
@@ -13,6 +14,7 @@ public class Character {
     private Chakra chakra;
 
     public Character(
+            int id,
             String name,
             String village,
             int age,
@@ -20,6 +22,7 @@ public class Character {
             Chakra chakra
 
     ) {
+        this.id = id;
         this.name = name;
         this.village = village;
         this.age = age;
@@ -56,5 +59,31 @@ public class Character {
         jutsus.add(jutsu);
     }
 
+    public int getId(){ return id; }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public void setChakra(Chakra chakra) {
+        this.chakra = chakra;
+    }
+
+    public void setJutsus(List<Jutsu> jutsus){
+        this.jutsus = jutsus;
+    }
 }
 
