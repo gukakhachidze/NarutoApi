@@ -1,8 +1,11 @@
 package ge.guka.SpringApi.naruto.model;
 
+import jakarta.persistence.Entity;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Character {
 
     private int id;
